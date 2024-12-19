@@ -169,23 +169,26 @@ Complexity is O(n\*3<sup>p</sup>\*p). (Note that p is supper small).
 
 ## Day 8
 
-Input is
+Input is a grid of characters of n lines and p columns.
 
 ### Task 1
 
-Solved using combinaisons.
+Solved using arithmetic.
 
+For each couple of same antenna, we create an "antinode" at the correct positions.
 
-
-Complexity is
+Complexity is theorically O(n<sup>2</sup>*p<sup>2</sup>).
+It is in fact O(nb_antenna<sup>2</sup> / nb_types_antenna). With nb_types_antenna being the number of different antennas there is.
 
 ### Task 2
 
-Solved using
+Solved using arithmetic too.
 
+The solution is quite the same,
+but this time, instead of checking only 2 positions,
+we check until we get out of the grid.
 
-
-Complexity is
+Complexity is same as the above, with an other max(n, p) factor.
 
 ## Day 9
 
