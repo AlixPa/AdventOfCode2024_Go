@@ -178,7 +178,7 @@ Solved using arithmetic.
 For each couple of same antenna, we create an "antinode" at the correct positions.
 
 Complexity is theorically O(n<sup>2</sup>*p<sup>2</sup>).
-It is in fact O(nb_antenna<sup>2</sup> / nb_types_antenna). With nb_types_antenna being the number of different antennas there is.
+It is in fact O(nb_antenna<sup>2</sup> / nb_types_antenna). With nb_types_antenna being the number of different antenna frequencies there is.
 
 ### Task 2
 
@@ -192,43 +192,53 @@ Complexity is same as the above, with an other max(n, p) factor.
 
 ## Day 9
 
-Input is
+Input is a list of 2*n numbers.
+
+This day is quite ugly as code. I am not yet doing pretty code when it comes to indexation playing.
 
 ### Task 1
 
-Solved using combinaisons.
+Solved using hardcore index exploration.
 
+Idea here is to fill the free space from left to right,
+while looking the files from right to left.
+Stoping when thoose two simultaneous exploration cross.
 
-
-Complexity is
+Complexity is O(n).
 
 ### Task 2
 
-Solved using
+Solved using super hardcore index exploration.
 
+Here the actual memory representation has been created.
+Again, looking the files from right to left,
+we here look the first free space big enough to fit the file from left to right.
 
-
-Complexity is
+Complexity is O(n<sup>2</sup>). Because of the "insort" function on deque.
 
 ## Day 10
 
-Input is
+Input is n lists of p numbers
 
 ### Task 1
 
-Solved using combinaisons.
+Solved using recursive exploration.
 
+For each position in the grid,
+if the height is 0,
+then we explore its paths and count the number of different "9" positions.
 
-
-Complexity is
+Complexity is O(n\*p\*C). Where C is approx 4\*3<sup>8</sup>/2<sup>10</sup> =~ 260.
 
 ### Task 2
 
-Solved using
+Solved also using recursive exploration.
 
+For each position in the grid,
+if the height is 0,
+then we explore its paths and count them.
 
-
-Complexity is
+Complexity is O(n\*p\*C). Where C is approx 4\*3<sup>8</sup>/2<sup>10</sup> =~ 260.
 
 ## Day 11
 
