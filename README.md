@@ -219,6 +219,7 @@ Complexity is O(n<sup>2</sup>). Because of the "insort" function on deque.
 ## Day 10
 
 Input is n lists of p numbers
+> "func isInGrid[T any](g [][]T, i, j int) bool" has been added to the snippets.
 
 ### Task 1
 
@@ -242,43 +243,47 @@ Complexity is O(n\*p\*C). Where C is approx 4\*3<sup>8</sup>/2<sup>10</sup> =~ 2
 
 ## Day 11
 
-Input is
+Input is a list of n stones.
 
 ### Task 1
 
-Solved using combinaisons.
+Solved using dynamic programming.
 
+We first can remark that after a finite number of steps any stone will end up as a lot of digit stones (from 0 to 9).
+So we first dynamically create a table that stores the numbers of stones after X blinks for the digit stones,
+then for each stone we have we apply the rules until we find a digit stone for wich we can instantly give the result.
 
-
-Complexity is
+Complexity is O(n).
 
 ### Task 2
 
-Solved using
+Solved also using dynamic programming.
 
+Same as the above.
 
-
-Complexity is
+Complexity is O(n).
 
 ## Day 12
 
-Input is
+Input is a grid of n lines and p columns.
 
 ### Task 1
 
-Solved using combinaisons.
+Solved using grid exploration.
 
+We explore each zone, calculing the area and perimeter (number of neighboors from a different zone).
 
-
-Complexity is
+Complexity is O(n*p).
 
 ### Task 2
 
-Solved using
+Solved also using grid exploration.
 
+We explore each zone, calculing the area and the number of inner and outer angle.
+An inner angle is an angle such that is has 2 adjacent neighboors from the zone but the diagonal is from an onther zone.
+An outer angle is an angle such that is has 2 adjacent neighboors from different zone.
 
-
-Complexity is
+Complexity is O(n*p).
 
 ## Day 13
 
