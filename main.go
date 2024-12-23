@@ -1,12 +1,12 @@
 package main
 
 import (
-	"adventOfCode2025/day12"
+	"adventOfCode2025/day13"
 	// "adventOfCode2025/test"
 )
 
 func main() {
-	day12.F1()
-	day12.F2()
+	day13.F1()
+	day13.F2()
 	//test.FTest()
 }

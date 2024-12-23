@@ -287,23 +287,24 @@ Complexity is O(n*p).
 
 ## Day 13
 
-Input is
+Input is a list of n buttonsA, buttonsB and objectives.
 
 ### Task 1
 
-Solved using combinaisons.
+Solved using equations.
 
+We have a 2 variables-system with 2 equations, so we can easily determine the answer for each variable.
+We just need to make sure we do not divide by 0 or try to press non-integer times on the buttons (we can't press 0.5 times!).
 
-
-Complexity is
+Complexity is O(n).
 
 ### Task 2
 
-Solved using
+Solved also using equations.
 
+Same as the above, without limiting ourselves at 100 pushs.
 
-
-Complexity is
+Complexity is O(n).
 
 ## Day 14
 
